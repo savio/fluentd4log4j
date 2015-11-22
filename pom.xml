@@ -44,9 +44,9 @@
 	<url>http://www.twimba.com/fluentd4log4j</url>
 
 	<scm>
-		<connection>scm:git:git@github.com:tuxetuxe/fluentd4log4j.git</connection>
-		<developerConnection>scm:git:git@github.com:tuxetuxe/fluentd4log4j.git</developerConnection>
-		<url>git@github.com:tuxetuxe/fluentd4log4j.git</url>
+		<connection>scm:git:git@github.com:dankocherga/fluentd4log4j.git</connection>
+		<developerConnection>scm:git:git@github.com:dankocherga/fluentd4log4j.git</developerConnection>
+		<url>git@github.com:dankocherga/fluentd4log4j.git</url>
 	</scm>
 
 	<developers>
