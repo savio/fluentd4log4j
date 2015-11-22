@@ -132,6 +132,8 @@ public class FluentdAppender extends AppenderSkeleton
     data.put("locationInformation", event.getLocationInformation().fullInfo);
     data.put("logger", event.getLoggerName());
     data.put("threadName", event.getThreadName());
+    data.put("timestamp", getTimestamp(event));
+    
     if (event.getThrowableStrRep() != null)
     {
       data.put("throwableInformation", event.getThrowableStrRep());
@@ -163,7 +165,12 @@ public class FluentdAppender extends AppenderSkeleton
     }
     fluentLogger.log(tag, data);
   }
-
+  
+  private String getTimestamp(LoggingEvent event) {
+      ZonedDateTime date = ZonedDateTime.ofInstant(Instant.ofEpochMilli(event.getTimeStamp()), ZoneId.of("UTC"));
+      return date.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+  }
+    
   //
   // Getters and Setters
   //
