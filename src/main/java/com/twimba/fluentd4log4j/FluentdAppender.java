@@ -134,7 +134,8 @@ public class FluentdAppender extends AppenderSkeleton
     Map<String, Object> data = new HashMap<String, Object>();
     data.put("message", event.getMessage());
     data.put("loggerClass", event.getFQNOfLoggerClass());
-    data.put("level", event.getLevel().toString());
+    data.put("priority", event.getLevel().toString());
+    data.put("priorityName", event.getLevel().getSyslogEquivalent());
     data.put("locationInformation", event.getLocationInformation().fullInfo);
     data.put("logger", event.getLoggerName());
     data.put("threadName", event.getThreadName());
