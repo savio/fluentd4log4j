@@ -15,7 +15,7 @@ import org.apache.log4j.AppenderSkeleton;
 import org.apache.log4j.helpers.LogLog;
 import org.apache.log4j.spi.LoggingEvent;
 import org.fluentd.logger.Config;
-import org.fluentd.logger.FluentLogger;pr
+import org.fluentd.logger.FluentLogger;
 import org.fluentd.logger.sender.ConstantDelayReconnector;
 import org.fluentd.logger.sender.ExponentialDelayReconnector;
 import org.fluentd.logger.sender.Reconnector;
