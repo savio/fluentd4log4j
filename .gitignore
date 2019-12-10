@@ -3,3 +3,4 @@
 /.idea
 /target
 /fluentd4log4j.iml
+/.settings/
